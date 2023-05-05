@@ -1,0 +1,3 @@
+[submodule "TUDoBeamerTheme"]
+	path = TUDoBeamerTheme
+	url = git@github.com:maxnoe/TUDoBeamerTheme.git

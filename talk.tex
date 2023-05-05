@@ -1,0 +1,48 @@
+% This example is meant to be compiled with lualatex or xelatex
+% The theme itself also supports pdflatex
+\PassOptionsToPackage{unicode}{hyperref}
+\documentclass[aspectratio=1610, 9pt]{beamer}
+
+% Load packages you need here
+\usepackage{polyglossia}
+\setmainlanguage{german}
+
+\usepackage{csquotes}
+
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+
+\usepackage{hyperref}
+\usepackage{bookmark}
+
+% load the theme after all packages
+
+\usetheme[
+  showtotalframes, % show total number of frames in the footline
+  % dark, % optional dark theme, uncomment to use
+]{tudo}
+
+% Put settings here, like
+\unimathsetup{
+  math-style=ISO,
+  bold-style=ISO,
+  nabla=upright,
+  partial=upright,
+  mathrm=sym,
+}
+
+\title{How to Upper Limits in \includegraphics[width=0.1\textwidth]{logos/applogo_unofficial_rainbow.pdf}}
+\author[S.~Fröse]{Stefan Fröse}
+\titlegraphic{\includegraphics[height=0.6\textheight]{imgs/is_it_christmas.png}}
+
+
+\begin{document}
+
+\maketitle
+
+\begin{frame}{Hinweise}
+\end{frame}
+
+\end{document}
