@@ -1,10 +1,15 @@
-all: build/talk.pdf
+all: plots build/talk.pdf
 
 texoptions = \
 	     --lualatex \
 	     --interaction=nonstopmode \
 	     --halt-on-error \
 	     --output-directory=build
+
+plots: build/distribution.pdf
+
+build/%.pdf: build
+	python plots/$*.py
 
 build/talk.pdf: FORCE | build
 	TEXINPUTS=TUDoBeamerTheme: latexmk $(texoptions) talk.tex
